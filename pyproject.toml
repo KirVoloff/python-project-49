@@ -9,11 +9,11 @@ packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+brain-games = "^0.5.1"
 
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-
 
 [build-system]
 requires = ["poetry-core"]
