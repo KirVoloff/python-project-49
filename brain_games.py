@@ -4,3 +4,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+from cli import name
+def call():
+    call.name()
