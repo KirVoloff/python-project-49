@@ -17,7 +17,6 @@ def game1():
     if game_even() == '':
         print(f"Congratulations, {name}! ")
     else:
-        print(f"Let's try again, {name}!")
-
+        print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
 
 game1()
