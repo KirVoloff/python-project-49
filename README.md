@@ -9,3 +9,9 @@ https://asciinema.org/a/1NJFo7D0N6mtLDydTd28EDAID
 
 ссылка на игру "Калькулятор":
 https://asciinema.org/a/yHqFwUvDBxVwac9yBLBJXZ3ZV
+
+ссылка на игру "НОД":
+https://asciinema.org/a/NgmtVFvByqLpZBrf1933XfLy2
+
+ссылка на игру "Прогрессия":
+https://asciinema.org/a/heI97S3eOosi5qVTGIleB4Cfa

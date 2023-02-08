@@ -17,3 +17,22 @@ def game_even():
         round += 1
         if round == 3:
             return winner
+
+
+def game_progression():
+    start = random.randint(0, 40)
+    end = random.randint(50, 100)
+    step = random.randint(2, 6)
+    progression = list(range(start, end, step))
+    Question = progression[:10]      # ограничение прогрессии
+    element = random.choice(Question)      # рандомный элемент
+    if element in Question:
+        for index, value in enumerate(Question):
+            if value == element:
+                Question[index] = '..'      # процесс замены цифры на ..
+    for_print = " ".join(map(str, Question))
+    print(f"Question: {for_print}")
+    answer = int(input('Your answer: '))
+    return answer, element
+
+
