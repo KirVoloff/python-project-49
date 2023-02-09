@@ -5,12 +5,12 @@ def game_even():
     winner = ''
     round = 0
     while round != 3:
-        number = random.randint(0, 1000)
+        number = random.randint(0, 1000)  # выбор рандомного числа
         print(f"Question: {number}")
         answer = (input('Your answer: '))
-        if number % 2 == 0 and answer == "yes":
+        if number % 2 == 0 and answer == "yes":  # число чётное
             print("Correct!")
-        elif number % 2 != 0 and answer == "no":
+        elif number % 2 != 0 and answer == "no":  # число нечётное
             print("Correct!")
         else:
             break
@@ -36,3 +36,18 @@ def game_progression():
     return answer, element
 
 
+def game_prime():
+    number = random.randint(1, 100)
+    divider = []
+    print(f"Question: {number}")
+    for i in range(2, number):  # Перебор чисел делителей
+        if (number % i) == 0:   # сложное число
+            break
+    else:
+        divider.append(number)  # простое число
+    if divider == []:
+        True_answer = 'no'
+    else:
+        True_answer = 'yes'
+    answer = input('Your answer: ')
+    return answer, True_answer

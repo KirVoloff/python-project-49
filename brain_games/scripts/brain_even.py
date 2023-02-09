@@ -19,4 +19,5 @@ def game1():
     else:
         print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
 
+
 game1()

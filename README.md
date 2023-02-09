@@ -15,3 +15,6 @@ https://asciinema.org/a/NgmtVFvByqLpZBrf1933XfLy2
 
 ссылка на игру "Прогрессия":
 https://asciinema.org/a/heI97S3eOosi5qVTGIleB4Cfa
+
+ссылка на игру "Простое ли число?":
+https://asciinema.org/a/22Ig0MZjbJa1WC55d6cMysNsB
