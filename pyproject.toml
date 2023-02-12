@@ -1,7 +1,8 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "package with 5 game"
+classifiers = ["Programming Language :: Python :: 3"]
 authors = ["Vol'nov Kirill <volnov-93@mail.ru>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
