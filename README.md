@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/KirVoloff/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/KirVoloff/python-project-49/actions)
 
-### Ссылка на аккаунт Code_сlimate:
+### Code_сlimate:
 <a href="https://codeclimate.com/github/KirVoloff/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/f7212c0c289a4616400b/maintainability" /></a>
 
 ### ссылка на игру "Чётность/нечётность":
@@ -21,23 +21,23 @@
 
 
 
-Description
-This project is a small entartainment package of 5 console mathematical games. You have to give 3 correct answers for each quiz, wrong answer terminates game.
+Описание
+Этот проект представляет собой небольшой развлекательный пакет из 5 консольных математических игр. Вы должны дать 3 правильных ответа на каждый тест, неправильный ответ прекращает игру.
 
 brain-even
-Guess whether the shown number is even or not.
+Угадайте, является ли показанное число чётным.
 
 brain-calc
-Guess the result of simple mathematic expression.
+Угадайте результат простого математического выражения.
 
 brain-gcd
-Guess the greatest common divisor of two given numbers.
+Угадайте наибольший общий делитель двух заданных чисел.
 
 brain-progression
-Guess the missing number in given progression.
+Угадайте пропущенное число в заданной прогрессии.
 
 brain-prime
-Guess whether the given number is prime or not.
+Угадайте, является данное число простым или нет.
 
 
 Python version:
@@ -50,22 +50,19 @@ Poetry version:
 0.1.0
 
 
-python = "^3.8.10"
-Installation guide
-To install the package for an end-user
-Execute:
-
+Руководство по установке.
+Чтобы установить пакет для конечного пользователя, выполните:
 python3 -m pip install --user dist/*.whl
 
-If you would like to install it as a developer
-To install all dependencies execute:
+Если вы хотите установить его как разработчик. 
+Чтобы установить все зависимости, выполните:
 
 make install
 
-To build a package execute:
+Чтобы собрать пакет, выполните:
 
 make build
 
-To install the package execute:
+Для установки пакета, выполните:
 
 make package-install
