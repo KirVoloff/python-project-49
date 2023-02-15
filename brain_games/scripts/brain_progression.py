@@ -1,23 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome
-from brain_games.mygame import game_progression
+from brain_games.game_starter import start_game
+from brain_games.games import progression
 
 
 def main():
-    name = welcome()
-    round = 0
-    print('What number is missing in the progression?')
-    while round != 3:
-        answer, element = game_progression()
-        if answer == element:
-            print("Correct!")
-        else:
-            print(f"'{answer}' is wrong ;(. Correct answer was '{element}'")
-            print(f"Let's try again, {name}!")
-            break
-        round += 1
-        if round == 3:
-            print(f"Congratulations, {name}! ")
+    start_game(progression)
 
 
 if __name__ == '__main__':
