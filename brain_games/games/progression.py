@@ -1,13 +1,13 @@
-# игра арифметическая прогрессия
+# игра "Прогрессия"
 from random import randint
 
 
-GAME_RULE = 'What number is missing in the progression?'
+GAME_CONDITION = 'What number is missing in the progression?'
 
 
 def progression_generation():
-    random_len = randint(5, 10)
-    random_step = randint(1, 5)
+    random_len = randint(1, 100)
+    random_step = randint(1, 10)
     lst = [str(i) for i in range(1, 100, random_step)][:random_len]
     return lst
 

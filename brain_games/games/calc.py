@@ -1,8 +1,8 @@
-# Игра калькулятор
+# Игра "Калькулятор"
 from random import randint, choice
 
 
-GAME_RULE = 'What is the result of the expression?'
+GAME_CONDITION = 'What is the result of the expression?'
 OPERATORS = choice('+-*')
 
 

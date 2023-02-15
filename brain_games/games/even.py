@@ -1,8 +1,8 @@
-# Игра на определение чётности
+# игра "Чётность/нечётность"
 from random import randint
 
 
-GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num):

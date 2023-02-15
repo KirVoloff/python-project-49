@@ -1,9 +1,9 @@
-# игра наибольший общий делитель
+# игра "НОД"
 from random import randint
 from math import gcd
 
 
-GAME_RULE = 'Find the greatest common divisor of given numbers.'
+GAME_CONDITION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_game():
