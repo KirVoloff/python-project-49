@@ -1,11 +1,10 @@
 # движок для игр ака общая логика
+from brain_games.cli import welcome
 import prompt
 
 
 def start_game(game):
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = welcome()
     print(game.GAME_CONDITION)
     counter = 0
     while counter != 3:
