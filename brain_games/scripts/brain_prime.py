@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.game_starter import start_game
+from brain_games.game_starter import run_game
 from brain_games.games import prime
 
 
 def main():
-    start_game(prime)
+    run_game(prime)
 
 
 if __name__ == '__main__':

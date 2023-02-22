@@ -3,20 +3,20 @@ from brain_games.cli import welcome
 import prompt
 
 
-def start_game(game) -> None:
-    name: str = welcome()
-    print(game.GAME_CONDITION)
-    counter = 0
-    while counter != 3:
-        result, question = game.get_game()
+def run_game(game) -> None:
+    player_name: str = welcome()
+    print(game.GAME_MESSAGE)
+    number_of_tries = 0
+    while number_of_tries != 3:
+        question, correct_answer = game.game_utils()
         print(question)
-        answer: str = prompt.string("Your answer: ")
-        counter += 1
-        if answer == result:
+        player_answer: str = prompt.string("Answer: ")
+        number_of_tries += 1
+        if player_answer == correct_answer:
             print("Correct!")
         else:
-            print(f"{answer} is wrong answer ;(. Correct "
-                  f"answer is {correct_answer}")
-            print(f"Let's try again, {name}!")
+            print(f"'{player_answer}' is wrong answer ;(. Correct "
+                  f"answer is '{correct_answer}'")
+            print(f"Let's try again, {player_name}!")
             return
-    print(f"Congratulations, {name}!")
+    print(f"Congratulations, {player_name}!")

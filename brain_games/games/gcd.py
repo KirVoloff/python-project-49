@@ -3,12 +3,14 @@ from random import randint
 from math import gcd
 
 
-GAME_CONDITION = 'Find the greatest common divisor of given numbers.'
+GAME_MESSAGE = "Find the greatest common divisor of given numbers."
+MIN_INTEGER = 1
+MAX_INTEGER = 10
 
 
-def get_game():
-    random_num_1 = randint(0, 100)
-    random_num_2 = randint(0, 100)
-    question = str(f'Question: {random_num_1} {random_num_2}')
-    result = gcd(random_num_1, random_num_2)
-    return str(result), question
+def game_utils() -> tuple:
+    first_number: int = randint(MIN_INTEGER, MAX_INTEGER)
+    second_number: int = randint(MIN_INTEGER, MAX_INTEGER)
+    largest_divisor: int = gcd(first_number, second_number)
+    question: str = f"Question: {first_number} {second_number}"
+    return question, str(largest_divisor)

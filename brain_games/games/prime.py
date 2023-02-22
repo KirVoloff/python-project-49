@@ -2,25 +2,25 @@
 from random import randint
 
 
-GAME_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_MESSAGE: str = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
+MIN_INTEGER = 1
+MAX_INTEGER = 100
 
 
-def is_prime(num):
-    counter = 0
-    for i in range(2, num // 2 + 1):
-        if num % i == 0:
-            counter += 1
-    if counter <= 0:
-        return True
-    else:
+def is_prime(number: int) -> bool:
+    if number <= 1:  # Negative numbers can't be prime
         return False
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
 
 
-def get_game():
-    random_num = randint(0, 100)
-    question = str(f'Question: {random_num}')
-    if is_prime(random_num):
-        result = 'yes'
+def game_utils() -> tuple:
+    random_number: int = randint(MIN_INTEGER, MAX_INTEGER)
+    question: str = f"Question: {random_number}"
+    if is_prime(random_number):
+        correct_answer: str = 'yes'
     else:
-        result = 'no'
-    return result, question
+        correct_answer: str = 'no'
+    return question, correct_answer

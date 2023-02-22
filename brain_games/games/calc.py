@@ -2,22 +2,31 @@
 from random import randint, choice
 
 
-GAME_CONDITION = 'What is the result of the expression?'
-OPERATORS = choice('+-*')
+ARITHMETIC_OPERATORS = ['+', '-', '*']
+GAME_MESSAGE = "What is the result of the expression?"
+MAX_INTEGER = 10
+MIN_INTEGER = 1
 
 
-def calculate_expression(num_1, num_2):
-    if OPERATORS == '+':
-        return num_1 + num_2
-    elif OPERATORS == '-':
-        return num_1 - num_2
-    else:
-        return num_1 * num_2
+def calculate_expression(operator: str, num1: int, num2: int) -> str:
+
+    correct_answer: int = 0
+    if operator == '+':
+        correct_answer = num1 + num2
+    if operator == '-':
+        correct_answer = num1 - num2
+    if operator == '*':
+        correct_answer = num1 * num2
+    return str(correct_answer)
 
 
-def get_game():
-    random_num_1 = randint(1, 100)
-    random_num_2 = randint(1, 100)
-    question = str(f'Question: {random_num_1} {OPERATORS} {random_num_2}')
-    result = calculate_expression(random_num_1, random_num_2)
-    return str(result), question
+def game_utils() -> tuple:
+    first_number: int = randint(MIN_INTEGER, MAX_INTEGER)
+    second_number: int = randint(MIN_INTEGER, MAX_INTEGER)
+    operator: str = choice(ARITHMETIC_OPERATORS)
+    question: str = f'Question: {first_number} {operator} ' \
+                    f'{second_number}'
+    correct_answer: str = calculate_expression(operator,
+                                               first_number,
+                                               second_number)
+    return question, correct_answer
