@@ -2,7 +2,7 @@
 from random import randint, randrange
 
 
-GAME_MESSAGE: str = "What number is missing in this progression?"
+GAME_MESSAGE: str = "What number is missing in the progression?"
 NUM_OF_ITERATIONS: int = 10
 MIN_START: int = 1
 MAX_START: int = 100
