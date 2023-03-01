@@ -5,7 +5,7 @@ import prompt
 
 def run_game(game) -> None:
     player_name: str = welcome()
-    print(game.GAME_MESSAGE)
+    print(game.GAME_RULE)
     number_of_tries = 0
     while number_of_tries != 3:
         question, correct_answer = game.game_utils()

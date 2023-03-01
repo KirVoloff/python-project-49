@@ -3,7 +3,7 @@ from random import randint, choice
 
 
 ARITHMETIC_OPERATORS = ['+', '-', '*']
-GAME_MESSAGE = "What is the result of the expression?"
+GAME_RULE = "What is the result of the expression?"
 MAX_INTEGER = 10
 MIN_INTEGER = 1
 
