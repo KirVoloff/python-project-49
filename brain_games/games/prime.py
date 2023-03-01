@@ -2,7 +2,8 @@
 from random import randint
 
 
-GAME_MESSAGE: str = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
+GAME_MESSAGE: str = ''' Answer \"yes\" if given number is prime. 
+Otherwise answer \"no\".'''
 MIN_INTEGER = 1
 MAX_INTEGER = 100
 
