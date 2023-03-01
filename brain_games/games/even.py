@@ -2,7 +2,7 @@
 from random import randint
 
 
-GAME_MESSAGE = "Answer 'yes' if the number is even otherwise answer 'no'!"
+GAME_MESSAGE = "Answer 'yes' if the number is even, otherwise answer 'no'!"
 MIN_INTEGER = 1
 MAX_INTEGER = 100
 
